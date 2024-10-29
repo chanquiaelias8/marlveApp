@@ -1,0 +1,101 @@
+.character-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.character-item {
+  position: relative;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #C0C0C0; 
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.character-item:hover {
+  transform: scale(1.05);
+  background-color: #FFD700; 
+}
+
+.character-item h3 {
+  color: #A50000;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.character-item p {
+  color: #666; 
+  font-size: 0.9rem;
+}
+
+.container-image {
+  background-color: #FFFFFF;
+  padding: 0.5em;
+  height: 9.37em;
+  width: 9.37em;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.container-image img {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  border-radius: 50%;
+}
+
+.character-name {
+  padding: 0.5em 0 0.8em 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #A50000;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #A50000;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .character-item {
+      padding: 0.8rem;
+  }
+
+  .character-item h3 {
+      font-size: 1rem;
+  }
+
+  .character-item p {
+      font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .character-item {
+      padding: 0.6rem;
+  }
+
+  .character-item h3 {
+      font-size: 0.9rem;
+  }
+
+  .character-item p {
+      font-size: 0.8rem;
+  }
+}

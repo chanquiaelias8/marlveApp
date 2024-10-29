@@ -1,0 +1,68 @@
+.create-update-character-view {
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.create-update-character-view h2 {
+    text-align: center;
+    color: #A50000; 
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.character-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #A50000; 
+    margin-bottom: 5px;
+}
+
+.form-input,
+.form-textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #C0C0C0;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: #00BFFF; 
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-button {
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #A50000; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-button:hover {
+    background-color: #FFD700; 
+}
